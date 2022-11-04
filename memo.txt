@@ -1,0 +1,39 @@
+user_info
+user_id 外部き
+age
+gender
+weight
+now_cal
+
+
+login
+user_id シーケンス
+name
+goal_cal
+
+create sequence id_seq
+INCREMENT BY 1
+START WITH 1
+;
+
+create table login(
+user_id NUMBER(8) GENERATED ALWAYS AS IDENTITY,
+name	VARCHAR2(20),
+goal_cal NUMBER(8),
+CONSTRAINT pk_user_id PRIMARY KEY(user_id)
+);
+
+create table user_info(
+user_id NUMBER(8),
+age	NUMBER(8),
+gender	VARCHAR2(20),
+weight	NUMBER(8),
+result	NUMBER(20),
+FOREIGN KEY(user_id)
+REFERENCES login(user_id)
+);
+
+insert into login(name, goal_cal) values('aoi','222');
+insert into user_info(age, gender, weight) values('20', 'man', '49');
+
+akihiro 75

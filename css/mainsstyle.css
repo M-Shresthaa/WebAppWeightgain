@@ -1,0 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;900&display=swap');
+
+input {
+  caret-color: red;
+}
+
+body {
+  margin: 0px;
+   width: auto;
+  height: auto;
+  background: #ecf0f3;
+  font-family: poppins;
+}
+
+.info{
+    size: 10cm;
+    color: black;
+    text-align: center;
+}
+
+a{
+    font-size: 2cm;
+    color: blueviolet;
+}
+img{
+    max-height: 2.5cm;
+    border: 2cm;
+    color: rgb(0, 255, 76);
+    box-sizing: border-box;
+    padding-right: 2cm;
+    margin-left: 8cm;
+}
+
+
+
+table{
+    position: top;
+}

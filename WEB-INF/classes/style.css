@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+    background-color: yellowgreen;
+}
+
+td{
+    font-size: larger;
+}
+
+table{
+    
+    margin-left : 50px;
+}
+
+head h1{
+    font-size: larger;
+    margin-right: 45px;
+    color: red;
+}
+table, th, td {
+    border: 2px solid;
+  }
